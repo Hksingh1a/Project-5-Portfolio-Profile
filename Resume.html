@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="stylesheet" href="style1.css">
@@ -13,6 +15,9 @@
 
 <body>
     <div class="reheader">
+        <span class="hamburger">
+                <span  class="material-symbols-outlined ">menu</span>
+            </span>
         <div class="renavbar">
             <a href="http://127.0.0.1:3000/index.html" class="logo">HkWorks...</a>
             <div class="parts">
@@ -34,9 +39,7 @@
                     </li>
                 </ul>
             </div>
-            <!-- <div class="hamburger">
-                <span class="material-symbols-outlined">menu</span>
-            </div> -->
+            
 
         </div>
         <div class="orecontainer ">
@@ -62,13 +65,18 @@
                             </li>
                             <li>
                                 <span class="icons"><i class="fa fa-globe" aria-hidden="true"></i>
-                                </i></span>
+                                    </i></span>
                                 <span>www.myweb.com</span>
                             </li>
                             <li>
                                 <span class="icons"><i class="fa fa-linkedin" aria-hidden="true"></i>
                                 </span>
                                 <span>www.mylinkden.com/profile</span>
+                            </li>
+                            <li>
+                                <span class="icons"><i class="fa fa-github" aria-hidden="true"></i>
+                                </span>
+                                <span>www.mygithub.com/profile</span>
                             </li>
                             <li>
                                 <span class="icons"><i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -81,56 +89,231 @@
                         <h3>Education</h3>
                         <ul>
                             <li>
-                            <h4>2021-2023</h4>
-                            <h5>Masters in Commerce(MCOM)</h5>
-                            <h5>IGNOU University,Delhi</h5>
+                                <h4>2021-2023</h4>
+                                <h5>Masters in Commerce(MCOM)</h5>
+                                <h5>IGNOU University,Delhi</h5>
                             </li>
                             <li>
-                            <h4>2018-2021</h4>
-                            <h5>Bachelor's in Manageement Studies(BMS)</h5>
-                            <h5>Shaheed Sukhdev College of Business Studies</h5>
-                            <h5>University of Delhi,Delhi</h5>
+                                <h4>2018-2021</h4>
+                                <h5>Bachelor's in Manageement Studies(BMS)</h5>
+                                <h5>Shaheed Sukhdev College of Business Studies</h5>
+                                <h5>University of Delhi,Delhi</h5>
                             </li>
                             <li>
-                            <h4>2016-2018</h4>
-                            <h5>XII</h5>
-                            <h5>Rajkiya Pratibha Vikas Vidyalya</h5>
-                            <h5>CBSE Board,Delhi</h5>
+                                <h4>2016-2018</h4>
+                                <h5>XII</h5>
+                                <h5>Rajkiya Pratibha Vikas Vidyalya</h5>
+                                <h5>CBSE Board,Delhi</h5>
                             </li>
                             <li>
-                            <h4>2016-2018</h4>
-                            <h5>X-Matriculation</h5>
-                            <h5>Rajkiya Pratibha Vikas Vidyalya</h5>
-                            <h5>CBSE Board,Delhi</h5>
+                                <h4>2016-2018</h4>
+                                <h5>X-Matriculation</h5>
+                                <h5>Rajkiya Pratibha Vikas Vidyalya</h5>
+                                <h5>CBSE Board,Delhi</h5>
                             </li>
-                            
+
                         </ul>
                     </div>
                     <div class="contactinfo Language">
                         <h3>Language</h3>
                         <ul>
                             <li>
-                            <span class="text">Hindi</span>
-                            <span class="percent">
-                                <div style="width: 90%;"></div>
-                            </span>
+                                <span class="text">Hindi</span>
+                                <span class="percent">
+                                    <div style="width: 90%;"></div>
+                                </span>
                             </li>
                             <li>
-                            <span class="text">English</span>
-                            <span class="percent">
-                                <div style="width: 90%;"></div>
-                            </span>
+                                <span class="text">English</span>
+                                <span class="percent">
+                                    <div style="width: 90%;"></div>
+                                </span>
                             </li>
                             <li>
-                            <span class="text">Japanese</span>
-                            <span class="percent">
-                                <div style="width: 15%;"></div>
-                            </span>
+                                <span class="text">Japanese</span>
+                                <span class="percent">
+                                    <div style="width: 15%;"></div>
+                                </span>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="right"></div>
+                <div class="right">
+                    <div class="about">
+                        <div class="title">Profile</div>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eaque nulla, expedita
+                                voluptas eos commodi saepe qui aliquam ullam eum tempora adipisci maiores at itaque!</p>
+                            <br>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita veniam vel
+                                accusantium, corporis ea ipsam ratione! Rerum placeat harum animi quaerat ea eum ullam?
+                            </p><br>
+                        </div>
+                    </div>
+                    <div class="Projects">
+                        <div class="title">Projects</div>
+                        <div class="allpjs">
+                            <div class="details">
+                                <div class="Pname">Spotify Clone</div>
+                                <div class="Pdetails">
+                                    <ul>
+                                        <li>
+                                            Fully Cloned the Ui with help of Html & CSS 
+                                        </li>
+                                        <li>
+                                            Responsive Design - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Doloremque, a.
+                                        </li>
+                                        <li>
+                                            Multifuntionality added Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, odio dicta? Cupiditate vel nostrum enim.
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="details">
+                                <div class="Pname">Netflix Clone</div>
+                                <div class="Pdetails">
+                                    <ul>
+                                        <li>
+                                            Fully Cloned the Ui with help of Html & CSS 
+                                        </li>
+                                        <li>
+                                            Responsive Design - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Doloremque, a.
+                                        </li> 
+                                    </ul>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="details">
+                                <div class="Pname">Weather App</div>
+                                <div class="Pdetails">
+                                    <ul>
+                                        <li>
+                                            take data from Apikey
+                                        </li>
+                                        <li>
+                                            Responsive Design - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Doloremque, a.
+                                        </li>
+                                        <li>
+                                            Multifuntionality added Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, odio dicta? Cupiditate vel nostrum enim.
+                                        </li>          
+                                    </ul>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="details">
+                                <div class="Pname">X-twitter</div>
+                                <div class="Pdetails">
+                                    <ul>
+                                        <li>
+                                            Fully Cloned the Ui with help of TailwindCSS
+                                        </li>
+                                        <li>
+                                            Responsive Design - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Doloremque, a.
+                                        </li>
+                                        <li>
+                                            Multifuntionality added Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, odio dicta? Cupiditate vel nostrum enim.
+                                        </li>          
+                                    </ul>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="details">
+                                <div class="Pname">Web-Profile</div>
+                                <div class="Pdetails">
+                                    <ul>
+                                        <li>
+                                            Website made with the help of HTML CSS and JS
+                                        </li>
+                                        <li>
+                                            Responsive Design - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                            Doloremque, a.
+                                        </li>
+                                        <li>
+                                            Multile Html file to serve as the multilayer website
+                                        </li> 
+                                        <li>
+                                            Multifuntionality added Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, odio dicta? Cupiditate vel nostrum enim.
+                                        </li>          
+                                                 
+                                    </ul>
+                                </div>
+                            </div>
+                            <br>
+                        </div>  
+                    </div>
+                    <br>
+                    <div class=" Skills ">
+                        <div class="title">Professional Skills</div>
+                        <ul>
+                            <li>
+                                <span class="text1">HTML</span>
+                                <span class="percent">
+                                    <div style="width: 90%;"></div>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="text1">CSS</span>
+                                <span class="percent">
+                                    <div style="width: 90%;"></div>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="text1">JS</span>
+                                <span class="percent">
+                                    <div style="width: 45%;"></div>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="text1">TailwindCSS</span>
+                                <span class="percent">
+                                    <div style="width: 75%;"></div>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="text1">Bootstrap</span>
+                                <span class="percent">
+                                    <div style="width: 55%;"></div>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="text1">JQuery</span>
+                                <span class="percent">
+                                    <div style="width: 60%;"></div>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="text1">ReactJS</span>
+                                <span class="percent">
+                                    <div style="width: 25%;"></div>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="text1">Adobe Illustrator</span>
+                                <span class="percent">
+                                    <div style="width: 35%;"></div>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="interest">
+                        <div class="title">Interest</div>
+                        <ul>
+                            <li><i class="fa fa-gamepad" aria-hidden="true"></i>Gaming</li>
+                            <li><i class="fa fa-microphone" aria-hidden="true"></i>Singing</li>
+                            <li><i class="fa fa-cutlery" aria-hidden="true"></i>Cooking</li>
+                            <li><i class="fa fa-code" aria-hidden="true"></i>Coding</li>
+                            <li><i class="fa fa-futbol-o" aria-hidden="true"></i>Football</li> 
+                            <li><i class="fa fa-book" aria-hidden="true"></i>Reading</li>
+                        </ul>
+
+                    </div>
+                </div>
             </div>
 
         </div>
