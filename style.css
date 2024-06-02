@@ -20,7 +20,7 @@ body {
 }
 
 .header {
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -131,7 +131,7 @@ a:hover {
 
 .seg {
     position: relative;
-    top: 28%;
+    top: 20%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -301,6 +301,25 @@ a:hover {
     position: relative;
 }
 
+.close{
+    display: none;
+    z-index: 2;
+    position: fixed;
+    top: 16px;
+    left: 30%;
+    cursor: pointer;
+    
+}
+/* ABoutCSS */
+.name h1,.name h3{
+    color:rgb(223, 40, 86) ;
+}
+.name h1{
+    margin-bottom: 12px;
+}
+.abinfo p{
+    font-family: "poppins";
+}
 .imgcircle1 img {
     position: absolute;
     top: 0;
@@ -309,14 +328,32 @@ a:hover {
     width: 100%;
     object-fit: cover;
 }
-.close{
-    display: none;
-    z-index: 2;
-    position: fixed;
-    top: 16px;
-    left: 30%;
-    cursor: pointer;
+
+
+
+/* Portfolio CSS */
+
+.PoContainer{
+
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    border-left: 1px  solid white;
+    border-right: 1px  solid white;
+    background-color: rgba(32, 32, 32, 0.619);
+    padding: 0 50px;
 }
+.PoContainer h1{
+    padding: 15px 0;
+}
+.PoContainer h2{
+    margin-bottom: 15px;
+}
+.PoContainer ul{
+    padding-left: 40px;
+}
+
+
 @media (max-width: 1400px) {
     .renavbar {
         height: 50px;
@@ -349,6 +386,10 @@ a:hover {
     }
 
     .imgcircle{
+        height: 300px;
+        width: 300px;
+    }
+    .imgcircle1{
         height: 300px;
         width: 300px;
     }
@@ -461,6 +502,20 @@ a:hover {
     .header{
         height: 100%;
     }
+    .abcontainer{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 50px auto
+    }
+    .imgcircle1{
+        margin: 0;
+    }
+    .name{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     
 }
 
@@ -473,6 +528,9 @@ a:hover {
     }
     .logo{
         font-size: 30px;
+    }
+    .seg{
+        top: 6%;
     }
 
 
@@ -487,7 +545,18 @@ a:hover {
     .logo{
         font-size: 25px;
     }
-
+    .seg{
+        top: 2%;
+    }
+    .imgcircle{
+        height: 250px;
+        width: 250px;
+    }
+    .imgcircle1{
+        height: 250px;
+        width: 250px;
+    }
+    
 
 }
 @media (max-width: 380px) {
@@ -525,6 +594,10 @@ a:hover {
     }
     .button span{
         font-size: 25px;
+    }
+    .imgcircle1{
+        height: 200px;
+        width: 200px;
     }
 
 
