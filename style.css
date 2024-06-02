@@ -434,6 +434,7 @@ a:hover {
         padding: 0;
         top: 12%;
         width: 100%;
+        padding-top: 40px;
         align-items: center;
         justify-content: center;
     }
@@ -461,4 +462,70 @@ a:hover {
         height: 100%;
     }
     
+}
+
+@media (max-width: 750px) {
+    .navbar{
+        width: 43%;
+    }
+    .close{
+        left: 37%;
+    }
+    .logo{
+        font-size: 30px;
+    }
+
+
+}
+@media (max-width: 500px) {
+    .navbar{
+        width: 50%;
+    }
+    .close{
+        left: 42%;
+    }
+    .logo{
+        font-size: 25px;
+    }
+
+
+}
+@media (max-width: 380px) {
+    .navbar{
+        width: 65%;
+    }
+    .close{
+        left: 55%;
+    }
+    .logo{
+        font-size: 22px;
+    }
+    .logo1{
+        font-size: 22px;
+    }
+    .imgcircle{
+        height: 200px;
+        width: 200px;
+    }
+    .text .one{
+        font-size: 30px;
+    }
+    .text .two{
+        font-size: 70px;
+    }
+    .text .three{
+        font-size: 15px;
+    }
+    .circle{
+        width: 50px;
+        height: 50px;
+    }
+    .segment .button{
+        gap: 18px;
+    }
+    .button span{
+        font-size: 25px;
+    }
+
+
 }
