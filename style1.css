@@ -35,7 +35,7 @@ body {
     background: rgba(28, 27, 27, 0.571);
     align-items: center;
 }
-.close{
+.rclose{
     display: none;
     z-index: 2;
     position: fixed;
@@ -332,7 +332,7 @@ a:hover {
 
 }
 
-.hamburger {
+.rhamburger {
     display: none;
     cursor: pointer;
 }
@@ -383,7 +383,7 @@ a:hover {
         flex-direction: column;
         
     }
-    .close{
+    .rclose{
         display: block;
         z-index: 2;
         position: fixed;
@@ -406,16 +406,17 @@ a:hover {
         color: rgb(223, 40, 86);
         
     }
+    
     .logo:hover{
        color: rgba(223, 40, 86, 0.953);
     }
 
-    .hamburger {
+    .rhamburger {
         display: block;
         position: absolute;
     }
 
-    .hamburger span {
+    .rhamburger span {
         font-size: 44px;
     }
 
@@ -451,7 +452,7 @@ a:hover {
     .logo{
         font-size: 25px;
     }
-    .close{
+    .rclose{
         z-index: 2;
         position: fixed;
         top: 10px;
@@ -473,7 +474,7 @@ a:hover {
         width: 50%;
         
     }
-    .close{
+    .rclose{
         z-index: 2;
         position: fixed;
         top: 10px;

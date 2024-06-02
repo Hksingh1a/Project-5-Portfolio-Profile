@@ -123,8 +123,10 @@ a:hover {
 }
 
 .hamburger {
-    margin-right: 20px;
+    margin-left:20px;
+    margin-top: 20px;
     display: none;
+    z-index: 2;
 }
 
 .seg {
@@ -134,12 +136,13 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     padding: 0 230px;
-    
+
 }
 
-.segment{
+.segment {
     width: 48%;
 }
+
 .segment .text {
     /* width: 600px; */
     position: relative;
@@ -190,7 +193,7 @@ a:hover {
     top: 0;
     right: 0;
     width: 100%;
-    height: 100px;
+    height: 120px;
     animation: aniright 2s ease forwards;
     animation-delay: 2s;
     background-color: rgb(0, 0, 0);
@@ -306,167 +309,156 @@ a:hover {
     width: 100%;
     object-fit: cover;
 }
-
-
-/* Resume */
-
-
-/* .reheader {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    /* background-image: url(images/invisible-black-background.webp); */
-    /* background-repeat: no-repeat;
-    background-size: cover;
-} */ */
-/* 
-.orecontainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(48, 51, 51);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.irecontainer {
-    display: grid;
-    width: 100%;
-    height: 100%;
-    max-height: 1200px;
-    max-width: 1000px;
-    grid-template-columns: 1fr 2fr;
-    margin: 50px;
-
-}
-
-.left {
-    background-color: rgb(112, 122, 200);
-    padding: 40px;
-}
-
-.right {
-    background-color: rgb(231, 235, 238);
-    padding: 40px;
-}
-
-.profiletxt {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid rgb(42, 41, 41);
-
-}
-
-.imgbx {
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    border-radius: 50%;
-    position: relative;
-}
-
-.imgbx img {
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-
-}
-
-.profiletxt h2 {
-    font-family: "Poppins", "sans-serif";
-    margin-top: 20px;
-    font-size: 1.5em;
-    font-weight: 700px;
-    margin-bottom: 5px;
-    text-align: center;
-}
-
-.profiletxt h2 span {
-    font-family: "Poppins", "sans-serif";
-    font-size: 0.8em;
-    font-weight: 500px;
-
-}
-
-.contactinfo {
-    padding: 8px;
-}
-
-.contactinfo h3 {
-    margin-bottom: 20px;
-    font-size: 20px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-family: "poppins", sans-serif;
-}
-
-.contactinfo ul li {
-    list-style: none;
+.close{
+    display: none;
+    z-index: 2;
+    position: fixed;
+    top: 16px;
+    left: 30%;
     cursor: pointer;
-    margin-bottom: 8px;
+}
+@media (max-width: 1400px) {
+    .renavbar {
+        height: 50px;
+        padding-top: 0;
+    }
+
+    .logo {
+        margin-left: 20px;
+        font-size: 25px;
+    }
+
+    .parts ul {
+        gap: 15px;
+    }
+
+    .parts ul li {
+        font-size: 19px;
+        margin-right: 10px;
+    }
+
+    .contact ul {
+        margin-right: 20px;
+    }
+
+    .contact ul li {
+        font-size: 13px;
+    }
+    .seg{
+        padding: 0 160px;
+    }
+
+    .imgcircle{
+        height: 300px;
+        width: 300px;
+    }
 
 }
 
-.contactinfo ul li .icons {
-    margin-right: 15px;
-}
+@media (max-width: 1000px) {
+    .logo::before {
+        animation: none; /* Disable animation in this media query */
+        width: 0px; /* Ensure the width is zero when the animation is disabled */
+    }
+    .parts ul::before {
+        animation: none; /* Disable animation in this media query */
+        width: 0px; /* Ensure the width is zero when the animation is disabled */
+    }
+    .one::before {
+        animation: none; /* Disable animation in this media query */
+        width: 0px; /* Ensure the width is zero when the animation is disabled */
+    }
+    .two::before {
+        animation: none; /* Disable animation in this media query */
+        width: 0px; /* Ensure the width is zero when the animation is disabled */
+    }
+    .three::before {
+        animation: none; /* Disable animation in this media query */
+        width: 0px; /* Ensure the width is zero when the animation is disabled */
+    }
+    .button::before {
+        animation: none; /* Disable animation in this media query */
+        width: 0px; /* Ensure the width is zero when the animation is disabled */
+    }
+    .imgcircle img::before {
+        animation: none; /* Disable animation in this media query */
+        width: 0px; /* Ensure the width is zero when the animation is disabled */
+    }
+    
+    .hamburger{
+        display: inline-block;
+        
+    }
+    .navbar {
+        position: fixed;
+        display: none;
+        height: fit-content;
+        width: 35%;
+        background-color: #212020;
+        padding: 25px;
+    }
+    .close{
+        display: block;
+        z-index: 2;
+        position: fixed;
+        top: 16px;
+        left: 30%;
+    }
+    .parts ul {
+        gap: 15px;
+        margin: 30px 0px;
+        flex-direction: column;
+        
+    }
+    .contact{
+        display: none;
+    }
+    .logo{
+        font-size: 35px;
+        margin: 0;
+        color: rgb(223, 40, 86);
+        
+    }
+    .logo:hover{
+       color: rgba(223, 40, 86, 0.953);
+    }
+    .logo1{
+        font-size: 35px;
+        margin: 0;
+        color: white;
+        margin-left: 20px;
+    }
+    .seg{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        top: 12%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .segment{
+        order: 2;
+        width: 70%;
+        margin: auto;
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+        align-items: center;
 
-.contactinfo ul li .icons i {
-    color: rgba(0, 0, 0, 0.48);
+    }
+    .imgcircle{
+        margin: 0;
+        margin-bottom: 50px;
+    }
+    .text{
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+    .header{
+        height: 100%;
+    }
+    
 }
-
-.Education ul li h4 {
-    color: rgba(0, 0, 0, 0.48);
-    font-family: "poppins";
-    margin-bottom: 5px;
-}
-
-.Education ul li h5 {
-    font-family: "poppins";
-    margin-bottom: 2px;
-    font-size: 12px;
-}
-
-.Language .text {
-    font-family: "poppins";
-    font-size: 14px;
-}
-
-.Language .percent {
-    position: relative;
-    width: 100%;
-    height: 6px;
-    background-color: rgb(50, 50, 50);
-    display: block;
-    border-radius: 10px;
-}
-
-.Language .percent div {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 6px;
-    background-color: rgb(83, 198, 234);
-    display: block;
-    border-radius: 10px;
-}
-.renavbar {
-    z-index: 1;
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 70px;
-    padding-top: 10px;
-    background: rgba(0, 0, 0, 0.031);
-    align-items: center;
-} */
