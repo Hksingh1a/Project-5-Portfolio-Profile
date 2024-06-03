@@ -333,6 +333,9 @@ a:hover {
 
 /* Portfolio CSS */
 
+#Portfolio{
+    width: 100vw;
+}
 .PoContainer{
 
     width: 70%;
@@ -344,13 +347,50 @@ a:hover {
     padding: 0 50px;
 }
 .PoContainer h1{
+    font-family: "poppins";
     padding: 15px 0;
+    color:rgb(223, 40, 86);
+    font-weight: 800px;
+    font-size: 40px;
 }
 .PoContainer h2{
+    font-family: "poppins";
     margin-bottom: 15px;
+    color:rgb(223, 40, 86);
 }
 .PoContainer ul{
+    font-family: "poppins";
     padding-left: 40px;
+}
+.PoContainer ul li{
+    font-family: "poppins";
+    padding-left: 40px;
+}
+.link a:hover{
+    color:rgb(223, 40, 86);
+}
+.proimg{
+    width: 600px;
+    height: 400px;
+    border: 1px solid black;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    margin-left:25px;
+}
+.proimg img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 
@@ -516,7 +556,13 @@ a:hover {
         flex-direction: column;
         align-items: center;
     }
-    
+    .proimg{
+        width: 375px;
+        height: 237.5px;
+    }
+    .prodetail ul li{
+        padding: 0;
+    }
 }
 
 @media (max-width: 750px) {
@@ -532,6 +578,10 @@ a:hover {
     .seg{
         top: 6%;
     }
+    .PoContainer{
+        width: 80%;
+    }
+    
 
 
 }
@@ -556,7 +606,29 @@ a:hover {
         height: 250px;
         width: 250px;
     }
-    
+    .PoContainer{
+        width: 90%;
+        padding: 0 25px;
+    }
+    .PoContainer ul{
+        padding-left: 20px;
+    }
+    .prodetail ul li{
+        padding: 0;
+    }
+    .PoContainer h1{
+        font-size: 30px;
+    }
+    .PoContainer h2{
+        font-size: 20px;
+    }
+    .link a{
+        font-size: 12px;
+    }
+    .proimg{
+        width: 180px;
+        height: 120px;
+    }
 
 }
 @media (max-width: 380px) {
