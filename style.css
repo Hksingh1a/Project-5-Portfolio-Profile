@@ -392,7 +392,26 @@ a:hover {
     align-items: center;
     
 }
-
+.twitter{
+    color: rgb(115, 185, 215);
+    margin: 0 10px;
+}
+.fa-spotify{
+    color: green;
+    margin: 0 10px;
+}
+.fa-user{
+    color: rgb(219, 216, 30);
+    margin: 0 10px;
+}
+.fa-sun-o{
+    color: rgb(229, 125, 41);
+    margin: 0 10px;
+}
+.fa-film{
+    color: rgb(108, 35, 35);
+    margin: 0 10px;
+}
 
 @media (max-width: 1400px) {
     .renavbar {
@@ -411,7 +430,7 @@ a:hover {
 
     .parts ul li {
         font-size: 19px;
-        margin-right: 10px;
+        margin: 0 10px;
     }
 
     .contact ul {
@@ -628,6 +647,12 @@ a:hover {
     .proimg{
         width: 180px;
         height: 120px;
+        margin: 0;
+    }
+    .prodetail{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
 }
