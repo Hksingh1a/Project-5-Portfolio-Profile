@@ -413,6 +413,87 @@ a:hover {
     margin: 0 10px;
 }
 
+
+
+/* Contacts */
+.CoContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    /* border-left: 1px  solid white;
+    border-right: 1px  solid white;
+    background-color: rgba(32, 32, 32, 0.619); */
+}
+.Contact{
+    margin: 20px 0;
+    width: 70%;
+    
+}
+.Contact h1{
+    font-size: 60px;
+    text-align: center;
+}
+.Contact ul{
+    list-style: none;
+    
+}
+.Cbox{
+    border: 1px solid silver;
+    border-radius: 10px;
+    padding: 40px; 
+    background-color: rgba(12, 12, 12, 0.489);
+    margin: 20px 0;
+}
+.Cbox li {
+    display: flex;
+    gap: 50px;
+    margin: 20px 0;
+}
+.Cbox li span{
+    font-size: 30px;
+}
+.git{
+    font-size: 30px;
+    
+}
+.git:hover{
+    color: red;
+    
+}
+.weblink{
+    font-size: 30px;
+    
+}
+.weblink:hover{
+    color: red;    
+}
+.linkdn{
+    font-size: 30px;
+    
+}
+.linkdn:hover{
+    color: red;   
+}
+.Cicons .fa-phone{
+    color: rgb(71, 192, 14);
+}
+.Cicons .fa-envelope-o{
+    color: rgb(217, 205, 28);
+}
+.Cicons .fa-globe{
+    color: blue;
+}
+.Cicons .fa-linkedin{
+    color: rgb(12, 214, 232);
+}
+.Cicons .fa-github{
+    color: rgb(255, 255, 255);
+}
+
 @media (max-width: 1400px) {
     .renavbar {
         height: 50px;
@@ -451,6 +532,14 @@ a:hover {
     .imgcircle1{
         height: 300px;
         width: 300px;
+    }
+    .Contact{
+        margin: 20px 0;
+        width: 80%;
+        
+    }
+    .CoContainer{
+        width: 80%;
     }
 
 }
@@ -582,6 +671,13 @@ a:hover {
     .prodetail ul li{
         padding: 0;
     }
+    .Contact{
+        width: 100%;
+        
+    }
+    .CoContainer{
+        width: 90%;
+    }
 }
 
 @media (max-width: 750px) {
@@ -601,6 +697,32 @@ a:hover {
         width: 80%;
     }
     
+    .Cbox li span{
+        font-size: 15px;
+    }
+    .git{
+        font-size: 15px;
+        
+    }
+    .weblink{
+        font-size: 15px;
+        
+    }
+    .linkdn{
+        font-size: 15px;
+        
+    }
+    .Contact h1{
+        font-size: 30px;        
+    }
+    .Cbox{
+        padding: 10px 30px;
+        margin: 0;
+    }
+    .Cbox li{
+        gap: 25px;
+    }
+   
 
 
 }
@@ -697,5 +819,23 @@ a:hover {
         width: 200px;
     }
 
+
+}
+@media (max-width: 380px){
+    .Cbox{
+        padding: 10px;
+    }
+    .git{
+        font-size: x-small;
+        
+    }
+    .weblink{
+        font-size: x-small;
+        
+    }
+    .linkdn{
+        font-size: x-small;
+        
+    }
 
 }
